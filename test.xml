@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+     COMPANY DATA XML - Sample file for Git, Linux & Vi Practice
+     Version History:
+     v1.0 - Initial company structure
+     v1.1 - Added employee salaries
+     v1.2 - Added departments and projects
+     v1.3 - Added employee addresses
+     v1.4 - Added performance reviews
+     v1.5 - Added training records
+     ============================================================ -->
+
+<company version="1.5" last_updated="2024-03-16">
+
+  <!-- ==================== COMPANY INFO ==================== -->
+  <company_info>
+    <name>TechCorp Solutions Pvt Ltd</name>
+    <founded>2010</founded>
+    <headquarters>Chennai, Tamil Nadu, India</headquarters>
+    <website>www.techcorpsolutions.com</website>
+    <email>contact@techcorpsolutions.com</email>
+    <phone>+91-44-12345678</phone>
+    <employees_count>250</employees_count>
+    <revenue currency="INR">50000000</revenue>
+  </company_info>
+
+  <!-- ==================== DEPARTMENTS ==================== -->
+  <departments>
+
+    <department id="D001">
+      <name>Engineering</name>
+      <head>Arjun Sharma</head>
+      <location>Block A, Floor 3</location>
+      <budget currency="INR">15000000</budget>
+      <team_size>80</team_size>
+    </department>
+
+    <department id="D002">
+      <name>Human Resources</name>
+      <head>Priya Nair</head>
+      <location>Block B, Floor 1</location>
+      <budget currency="INR">5000000</budget>
+      <team_size>20</team_size>
+    </department>
+
+    <department id="D003">
+      <name>DevOps</name>
+      <head>Karthik Rajan</head>
+      <location>Block A, Floor 2</location>
+      <budget currency="INR">8000000</budget>
+      <team_size>30</team_size>
+    </department>
+
+    <department id="D004">
+      <name>Quality Assurance</name>
+      <head>Meena Suresh</head>
+      <location>Block C, Floor 2</location>
+      <budget currency="INR">6000000</budget>
+      <team_size>40</team_size>
+    </department>
+
+    <department id="D005">
+      <name>Sales and Marketing</name>
+      <head>Rahul Verma</head>
+      <location>Block B, Floor 3</location>
+      <budget currency="INR">10000000</budget>
+      <team_size>50</team_size>
+    </department>
+
+  </departments>
+
+  <!-- ==================== EMPLOYEES ==================== -->
+  <employees>
+
+    <!-- EMPLOYEE 1 -->
+    <employee id="E001" status="active" version_added="v1.0">
+      <personal>
+        <first_name>Arjun</first_name>
+        <last_name>Sharma</last_name>
+        <age>35</age>
+        <gender>Male</gender>
+        <email>arjun.sharma@techcorpsolutions.com</email>
+        <phone>+91-9876543210</phone>
+      </personal>
+      <professional>
+        <designation>Senior Software Engineer</designation>
+        <department_id>D001</department_id>
+        <joining_date>2015-06-01</joining_date>
+        <experience_years>10</experience_years>
+        <skills>
+          <skill>Java</skill>
+          <skill>Spring Boot</skill>
+          <skill>Microservices</skill>
+          <skill>AWS</skill>
+          <skill>Docker</skill>
+        </skills>
+      </professional>
+      <!-- Added in v1.1 -->
+      <salary version_added="v1.1">
+        <basic currency="INR">85000</basic>
+        <hra currency="INR">34000</hra>
+        <allowances currency="INR">15000</allowances>
+        <deductions currency="INR">10000</deductions>
+        <net_salary currency="INR">124000</net_salary>
+      </salary>
+      <!-- Added in v1.3 -->
+      <address version_added="v1.3">
+        <street>12, Anna Nagar East</street>
+        <city>Chennai</city>
+        <state>Tamil Nadu</state>
+        <pincode>600102</pincode>
+        <country>India</country>
+      </address>
+      <!-- Added in v1.4 -->
+      <performance_review version_added="v1.4">
+        <year>2023</year>
+        <rating>4.5</rating>
+        <grade>A</grade>
+        <comments>Excellent performer, led 3 major projects</comments>
+        <promotion_eligible>true</promotion_eligible>
+      </performance_review>
+      <!-- Added in v1.5 -->
+      <training_records version_added="v1.5">
+        <training>
+          <course>AWS Solutions Architect</course>
+          <completed_date>2023-08-15</completed_date>
+          <certification>Yes</certification>
+          <score>92</score>
+        </training>
+        <training>
+          <course>Kubernetes Advanced</course>
+          <completed_date>2024-01-10</completed_date>
+          <certification>Yes</certification>
+          <score>88</score>
+        </training>
+      </training_records>
+    </employee>
+
+    <!-- EMPLOYEE 2 -->
+    <employee id="E002" status="active" version_added="v1.0">
+      <personal>
+        <first_name>Priya</first_name>
+        <last_name>Nair</last_name>
+        <age>30</age>
+        <gender>Female</gender>
+        <email>priya.nair@techcorpsolutions.com</email>
+        <phone>+91-9876543211</phone>
+      </personal>
+      <professional>
+        <designation>HR Manager</designation>
+        <department_id>D002</department_id>
+        <joining_date>2018-03-15</joining_date>
+        <experience_years>7</experience_years>
+        <skills>
+          <skill>Recruitment</skill>
+          <skill>Payroll Management</skill>
+          <skill>Employee Relations</skill>
+          <skill>HRMS Tools</skill>
+        </skills>
+      </professional>
+      <salary version_added="v1.1">
+        <basic currency="INR">70000</basic>
+        <hra currency="INR">28000</hra>
+        <allowances currency="INR">12000</allowances>
+        <deductions currency="INR">8000</deductions>
+        <net_salary currency="INR">102000</net_salary>
+      </salary>
+      <address version_added="v1.3">
+        <street>45, T Nagar</street>
+        <city>Chennai</city>
+        <state>Tamil Nadu</state>
+        <pincode>600017</pincode>
+        <country>India</country>
+      </address>
+      <performance_review version_added="v1.4">
+        <year>2023</year>
+        <rating>4.2</rating>
+        <grade>A</grade>
+        <comments>Streamlined recruitment process, reduced onboarding time by 30%</comments>
+        <promotion_eligible>true</promotion_eligible>
+      </performance_review>
+      <training_records version_added="v1.5">
+        <training>
+          <course>Advanced HR Analytics</course>
+          <completed_date>2023-09-20</completed_date>
+          <certification>Yes</certification>
+          <score>90</score>
+        </training>
+      </training_records>
+    </employee>
+
+    <!-- EMPLOYEE 3 -->
+    <employee id="E003" status="active" version_added="v1.0">
+      <personal>
+        <first_name>Karthik</first_name>
+        <last_name>Rajan</last_name>
+        <age>32</age>
+        <gender>Male</gender>
+        <email>karthik.rajan@techcorpsolutions.com</email>
+        <phone>+91-9876543212</phone>
+      </personal>
+      <professional>
+        <designation>DevOps Lead</designation>
+        <department_id>D003</department_id>
+        <joining_date>2017-07-01</joining_date>
+        <experience_years>8</experience_years>
+        <skills>
+          <skill>Jenkins</skill>
+          <skill>Kubernetes</skill>
+          <skill>Terraform</skill>
+          <skill>Ansible</skill>
+          <skill>Linux</skill>
+          <skill>CI/CD Pipelines</skill>
+        </skills>
+      </professional>
+      <salary version_added="v1.1">
+        <basic currency="INR">90000</basic>
+        <hra currency="INR">36000</hra>
+        <allowances currency="INR">18000</allowances>
+        <deductions currency="INR">12000</deductions>
+        <net_salary currency="INR">132000</net_salary>
+      </salary>
+      <address version_added="v1.3">
+        <street>78, Velachery Main Road</street>
+        <city>Chennai</city>
+        <state>Tamil Nadu</state>
+        <pincode>600042</pincode>
+        <country>India</country>
+      </address>
+      <performance_review version_added="v1.4">
+        <year>2023</year>
+        <rating>4.8</rating>
+        <grade>A+</grade>
+        <comments>Built entire CI/CD pipeline from scratch, zero downtime deployments</comments>
+        <promotion_eligible>true</promotion_eligible>
+      </performance_review>
+      <training_records version_added="v1.5">
+        <training>
+          <course>Certified Kubernetes Administrator</course>
+          <completed_date>2023-05-12</completed_date>
+          <certification>Yes</certification>
+          <score>95</score>
+        </training>
+        <training>
+          <course>HashiCorp Terraform Associate</course>
+          <completed_date>2023-11-30</completed_date>
+          <certification>Yes</certification>
+          <score>91</score>
+        </training>
+      </training_records>
+    </employee>
+
+    <!-- EMPLOYEE 4 -->
+    <employee id="E004" status="inactive" version_added="v1.0">
+      <personal>
+        <first_name>Meena</first_name>
+        <last_name>Suresh</last_name>
+        <age>28</age>
+        <gender>Female</gender>
+        <email>meena.suresh@techcorpsolutions.com</email>
+        <phone>+91-9876543213</phone>
+      </personal>
+      <professional>
+        <designation>QA Engineer</designation>
+        <department_id>D004</department_id>
+        <joining_date>2020-01-10</joining_date>
+        <experience_years>4</experience_years>
+        <skills>
+          <skill>Selenium</skill>
+          <skill>JUnit</skill>
+          <skill>Postman</skill>
+          <skill>JIRA</skill>
+          <skill>Manual Testing</skill>
+        </skills>
+      </professional>
+      <salary version_added="v1.1">
+        <basic currency="INR">55000</basic>
+        <hra currency="INR">22000</hra>
+        <allowances currency="INR">10000</allowances>
+        <deductions currency="INR">6000</deductions>
+        <net_salary currency="INR">81000</net_salary>
+      </salary>
+      <address version_added="v1.3">
+        <street>23, Adyar</street>
+        <city>Chennai</city>
+        <state>Tamil Nadu</state>
+        <pincode>600020</pincode>
+        <country>India</country>
+      </address>
+      <performance_review version_added="v1.4">
+        <year>2023</year>
+        <rating>3.8</rating>
+        <grade>B+</grade>
+        <comments>Good testing skills, needs improvement in automation</comments>
+        <promotion_eligible>false</promotion_eligible>
+      </performance_review>
+      <training_records version_added="v1.5">
+        <training>
+          <course>Selenium WebDriver with Java</course>
+          <completed_date>2023-07-25</completed_date>
+          <certification>No</certification>
+          <score>78</score>
+        </training>
+      </training_records>
+    </employee>
+
+    <!-- EMPLOYEE 5 -->
+    <employee id="E005" status="active" version_added="v1.0">
+      <personal>
+        <first_name>Rahul</first_name>
+        <last_name>Verma</last_name>
+        <age>38</age>
+        <gender>Male</gender>
+        <email>rahul.verma@techcorpsolutions.com</email>
+        <phone>+91-9876543214</phone>
+      </personal>
+      <professional>
+        <designation>Sales Manager</designation>
+        <department_id>D005</department_id>
+        <joining_date>2013-09-01</joining_date>
+        <experience_years>12</experience_years>
+        <skills>
+          <skill>B2B Sales</skill>
+          <skill>CRM Tools</skill>
+          <skill>Lead Generation</skill>
+          <skill>Client Management</skill>
+          <skill>Negotiation</skill>
+        </skills>
+      </professional>
+      <salary version_added="v1.1">
+        <basic currency="INR">95000</basic>
+        <hra currency="INR">38000</hra>
+        <allowances currency="INR">20000</allowances>
+        <deductions currency="INR">14000</deductions>
+        <net_salary currency="INR">139000</net_salary>
+      </salary>
+      <address version_added="v1.3">
+        <street>56, Nungambakkam High Road</street>
+        <city>Chennai</city>
+        <state>Tamil Nadu</state>
+        <pincode>600034</pincode>
+        <country>India</country>
+      </address>
+      <performance_review version_added="v1.4">
+        <year>2023</year>
+        <rating>4.6</rating>
+        <grade>A</grade>
+        <comments>Exceeded sales target by 40%, onboarded 15 new enterprise clients</comments>
+        <promotion_eligible>true</promotion_eligible>
+      </performance_review>
+      <training_records version_added="v1.5">
+        <training>
+          <course>Advanced Sales Strategy</course>
+          <completed_date>2023-04-18</completed_date>
+          <certification>Yes</certification>
+          <score>89</score>
+        </training>
+      </training_records>
+    </employee>
+
+  </employees>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <projects version_added="v1.2">
+
+    <project id="P001">
+      <name>E-Commerce Platform Redesign</name>
+      <department_id>D001</department_id>
+      <lead_employee_id>E001</lead_employee_id>
+      <start_date>2024-01-01</start_date>
+      <end_date>2024-06-30</end_date>
+      <status>in_progress</status>
+      <budget currency="INR">3000000</budget>
+      <technologies>
+        <tech>React</tech>
+        <tech>Node.js</tech>
+        <tech>PostgreSQL</tech>
+        <tech>AWS</tech>
+      </technologies>
+      <milestones>
+        <milestone>
+          <name>UI Wireframes</name>
+          <due_date>2024-02-01</due_date>
+          <completed>true</completed>
+        </milestone>
+        <milestone>
+          <name>Backend API Development</name>
+          <due_date>2024-04-01</due_date>
+          <completed>false</completed>
+        </milestone>
+        <milestone>
+          <name>UAT Testing</name>
+          <due_date>2024-06-01</due_date>
+          <completed>false</completed>
+        </milestone>
+      </milestones>
+    </project>
+
+    <project id="P002">
+      <name>CI/CD Pipeline Automation</name>
+      <department_id>D003</department_id>
+      <lead_employee_id>E003</lead_employee_id>
+      <start_date>2023-11-01</start_date>
+      <end_date>2024-03-31</end_date>
+      <status>completed</status>
+      <budget currency="INR">1500000</budget>
+      <technologies>
+        <tech>Jenkins</tech>
+        <tech>Docker</tech>
+        <tech>Kubernetes</tech>
+        <tech>Terraform</tech>
+        <tech>GitHub Actions</tech>
+      </technologies>
+      <milestones>
+        <milestone>
+          <name>Infrastructure Setup</name>
+          <due_date>2023-12-01</due_date>
+          <completed>true</completed>
+        </milestone>
+        <milestone>
+          <name>Pipeline Configuration</name>
+          <due_date>2024-02-01</due_date>
+          <completed>true</completed>
+        </milestone>
+        <milestone>
+          <name>Go Live</name>
+          <due_date>2024-03-31</due_date>
+          <completed>true</completed>
+        </milestone>
+      </milestones>
+    </project>
+
+  </projects>
+
+</company>
